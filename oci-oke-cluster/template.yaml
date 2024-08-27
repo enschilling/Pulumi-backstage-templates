@@ -118,8 +118,8 @@ spec:
       organization: ${{parameters.organization}}
       outputs:
       - okeClusterId
-      - okeClusterPubIP
       - okeNodePool
+      - okeClusterPubIP
       stack: ${{ parameters.stack }}
       suppressProgress: true
 
