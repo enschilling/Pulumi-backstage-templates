@@ -158,4 +158,4 @@ spec:
     text:
     - title: Retrieve KubeConfig via OCI CLI
       content: |
-        oci ce cluster create-kubeconfig --cluster-id ${{ steps['pulumi-deploy-infrastructure'].output.okeClusterId }} --file $HOME/.kube/config --region <your region here> --token-version 2.0.0  --kube-endpoint PUBLIC_ENDPOINT
+        oci ce cluster create-kubeconfig --cluster-id ${{ steps['pulumi-deploy-infrastructure'].outputs.okeClusterId }} --file $HOME/.kube/config --region <your region here> --token-version 2.0.0  --kube-endpoint PUBLIC_ENDPOINT

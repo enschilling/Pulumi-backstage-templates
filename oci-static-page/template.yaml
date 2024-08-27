@@ -162,4 +162,4 @@ spec:
       icon: catalog
       entityRef: ${{ steps['register'].output.entityRef }}
     - title: URL
-      url: ${{ steps['pulumi-deploy-infrastructure'].frontendURL.url }}
+      url: ${{ steps['pulumi-deploy-infrastructure'].outputs.bucketURL }}
