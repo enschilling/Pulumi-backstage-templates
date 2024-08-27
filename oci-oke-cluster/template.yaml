@@ -117,7 +117,9 @@ spec:
       repoProjectPath: .
       organization: ${{parameters.organization}}
       outputs:
-      - bucketURL
+      - okeClusterId
+      - okeClusterPubIP
+      - okeNodePool
       stack: ${{ parameters.stack }}
       suppressProgress: true
 
