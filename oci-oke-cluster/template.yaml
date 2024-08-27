@@ -155,5 +155,7 @@ spec:
     - title: Open the Catalog Info Component
       icon: catalog
       entityRef: ${{ steps['register'].output.entityRef }}
-    - title: URL
-      url: ${{ steps['pulumi-deploy-infrastructure'].frontendURL.url }}
+    text:
+    - title: Retrieve KubeConfig via OCI CLI
+      content: |
+        oci ce cluster create-kubeconfig --cluster-id ${{ steps['pulumi-deploy-infrastructure'].output.okeClusterId }} --file $HOME/.kube/config --region <your region here> --token-version 2.0.0  --kube-endpoint PUBLIC_ENDPOINT
