@@ -228,4 +228,4 @@ variables:
 outputs:
   okeClusterId: ${okeCluster.id}
   okeNodePool: ${okeNodePool.id}
-  okeClusterPubIP: ${okeCluster.endpoints}
+  okeClusterPubIP: ${okeCluster.endpoints[0].publicEndpoint}
