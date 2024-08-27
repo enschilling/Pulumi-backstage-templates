@@ -174,7 +174,7 @@ resources:
           podsCidr: "10.244.0.0/16"
           servicesCidr: "10.96.0.0/16"
         serviceLbSubnetIds: 
-        - ${k8sServiceLbSecurityList.id}
+        - ${k8sSvcLbSubnet.id}
       type: "ENHANCED_CLUSTER"
 
   okeNodePool:
