@@ -45,10 +45,9 @@ spec:
 
   - title: Configure Pulumi template
     required:
-    - stack
     - organization
     - esc
-    - content
+    - stack
     properties:
       organization:
         title: Organization
@@ -66,8 +65,10 @@ spec:
         title: Select stack
         type: string
         enum:
-        - 00-backstage
+        - ocw2024
+        - development
         enumNames:
+        - OracleCloudWorld-2024
         - Development
         description: The pulumi stack to use
   - title: Choose a GitHub repository location
