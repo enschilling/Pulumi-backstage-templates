@@ -70,16 +70,6 @@ spec:
         enumNames:
         - Development
         description: The pulumi stack to use
-      content:
-        title: Website Content
-        type: string
-        ui:widget: textarea
-        ui:options:
-          rows: 10
-        description: |
-          The content of the website
-          This will be written to the index.html file
-          You can use html tags here
   - title: Choose a GitHub repository location
     required:
     - repoUrl
@@ -106,7 +96,6 @@ spec:
         owner: ${{ parameters.owner }}
         system: ${{ parameters.system }}
         esc: ${{parameters.esc}}
-        content: ${{parameters.content}}
         compartment_ocid: ${{parameters.compartmentId }}
 
   - id: wait

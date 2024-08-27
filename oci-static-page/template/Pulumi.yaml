@@ -16,8 +16,7 @@ resources:
       bucket: ${bucket.name}
       namespace: ${namespace.namespace}
       object: "index.html"
-      content: |
-        ${{values.content}}
+      source: "www/index.html"
       contentType: "text/html"
 
 variables:
