@@ -66,10 +66,14 @@ spec:
         type: string
         enum:
         - ocw2024
-        - development
+        - dev
+        - test
+        - prod
         enumNames:
         - OracleCloudWorld-2024
         - Development
+        - QA
+        - Prouction
         description: The pulumi stack to use
   - title: Choose a GitHub repository location
     required:
